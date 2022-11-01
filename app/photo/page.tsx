@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 export default async function Photo() {
-  const posts = await getData();
+  const posts = await getData1();
 
   return <div>
     <Suspense fallback={<p>Loading feed...</p>}>
@@ -21,7 +21,7 @@ export default async function Photo() {
   </div>
 }
 
-async function getData() {
+async function getData1() {
   const res = await fetch('https://jsonplaceholder.typicode.com/photos')
   return await res.json()
 }
