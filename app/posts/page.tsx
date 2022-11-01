@@ -18,6 +18,7 @@ export default async function Post() {
         </div>
       ))} */}
       {JSON.stringify(posts)}
+      aaaaaaaaaa
     </Suspense>
   </div>
 }
@@ -25,5 +26,5 @@ export default async function Post() {
 async function getData() {
   // const res = await fetch('https://jsonplaceholder.typicode.com/posts')
   const res = await fetch('https://api.publicapis.org/entries')
-  return res.json()
+  return await res.json()
 }
