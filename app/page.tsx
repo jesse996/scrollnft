@@ -8,11 +8,11 @@ export default function Home() {
       <h1 className=' text-xl mb-5'>Home</h1>
       <Link href="/posts" className='link'>Posts</Link>
       <br />
-      <Link href="/comments" className='link'>Comments</Link>
+      {/* <Link href="/comments" className='link'>Comments</Link>
       <br />
       <Link href={'/albums'} className='link'>Albums</Link>
       <br />
-      <Link href={'/photos'} className='link'>Photos</Link>
+      <Link href={'/photos'} className='link'>Photos</Link> */}
     </div>
   )
 }
