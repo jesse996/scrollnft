@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 export default async function Photo() {
-  const posts = await getData();
+  // const posts = await getData();
 
   return <div>
     {/* <Suspense fallback={<p>Loading feed...</p>}>
