@@ -51,6 +51,6 @@ export default async function Post() {
 }
 
 async function getData() {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+  const res = await fetch('https://jsonplaceholder.typicode.com/photos')
   return await res.json()
 }
