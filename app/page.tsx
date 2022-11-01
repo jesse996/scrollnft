@@ -11,8 +11,8 @@ export default function Home() {
       {/* <Link href="/comments" className='link'>Comments</Link>
       <br />
       <Link href={'/albums'} className='link'>Albums</Link>
-      <br />
-      <Link href={'/photos'} className='link'>Photos</Link> */}
+      <br /> */}
+      <Link href={'/photos'} className='link'>Photos</Link>
     </div>
   )
 }
