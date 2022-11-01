@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Suspense } from "react";
 
-export default async function Post() {
+export default async function Photo() {
   const posts = await getData();
 
   return <div>
