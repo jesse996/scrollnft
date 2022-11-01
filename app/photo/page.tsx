@@ -2,21 +2,21 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 export default async function Photo() {
-  // const posts = await getData();
+  const posts = await getData();
 
   return <div>
-    {/* <Suspense fallback={<p>Loading feed...</p>}>
+    <Suspense fallback={<p>Loading feed...</p>}>
       <div>
         <Link href={'/'} className=' text-2xl'>Home</Link>
       </div>
       {posts.map((post: any) => (
         <div key={post.id}>
           <Link href={`/photos/${post.id}`}>
-          {post.title}
+            {post.title}
           </Link>
         </div>
       ))}
-    </Suspense> */}
+    </Suspense>
     photo
   </div>
 }
