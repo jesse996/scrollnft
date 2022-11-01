@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default async function PostPage({ params, searchParams }: { params: any, searchParams: any }) {
+export default async function PostPage({ params }: { params: { id: number } }) {
   const post = await getData(params.id);
   return (
     <div>
