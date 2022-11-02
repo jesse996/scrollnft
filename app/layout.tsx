@@ -28,8 +28,10 @@ export default function RootLayout({
 }
 
 function Header() {
-  return <div className=' shadow-sm h-16 flex items-center px-5'>
-    <Link href={'/'} className='text-2xl font-bold' >Home</Link>
+  return <div className='mb-24'>
+    <div className=' top-0 fixed z-10 bg-white w-full shadow-sm h-16 flex items-center px-5'>
+      <Link href={'/'} className='text-2xl font-bold' >Home</Link>
+    </div>
   </div>
 }
 

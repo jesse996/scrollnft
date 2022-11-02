@@ -11,6 +11,18 @@ export default function Home() {
         <Item />
         <Item />
         <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
       </div>
     </div >
   )
