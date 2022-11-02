@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 
 export default function FootNav() {
   const pathname: string = usePathname()
-  console.log('pathname', pathname)
+
   if (pathname !== '/' && pathname !== '/me') {
     return null
   }
