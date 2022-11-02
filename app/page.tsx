@@ -12,7 +12,7 @@ export default function Home() {
       <br />
       <Link href={'/albums'} className='link'>Albums</Link>
       <br /> */}
-      <Link href={'/photos'} className='link'>Photos</Link>
+      <Link href={'/albums'} className='link'>Albums</Link>
     </div>
   )
 }

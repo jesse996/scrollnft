@@ -6,8 +6,7 @@ export default async function PostPage({ params }: { params: { id: number }, }) 
     <div>
       <Link href={'/'}>Home</Link>
       <p className="mb-5 text-2xl font-bold">{post.title}</p>
-      <p>{post.body}</p>
-
+      <p>user id: {post.userId}</p>
     </div>
   );
 }

@@ -10,15 +10,16 @@ export default async function Post() {
     </div>
     {posts.map((post: any) => (
       <div key={post.id}>
-        <Link href={`/posts/${post.id}`}>
+        <Link href={`/albums/${post.id}`}>
           {post.title}
         </Link>
       </div>
     ))}
+
   </div>
 }
 
 async function getData() {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+  const res = await fetch('https://jsonplaceholder.typicode.com/albums')
   return await res.json()
 }
