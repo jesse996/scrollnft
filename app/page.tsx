@@ -31,7 +31,7 @@ export default function Home() {
 // 首页nft项
 function Item() {
   return <div className='shadow-lg'>
-    <div className='h-40 relative'>
+    <div className=' aspect-square relative'>
       <Link href={'/item'}>
         <Image src="https://static.ibox.art/file/oss/test/image/nft-goods/b36619c8c9734ea9b56167e79850add5.jpg?style=st6" alt="img" fill />
       </Link>
