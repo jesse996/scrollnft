@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function Home() {
   return (
-    <div className=''>
+    <div >
       <p className='text-2xl font-bold mb-4'>发现数字藏品</p>
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>
         <Item />
