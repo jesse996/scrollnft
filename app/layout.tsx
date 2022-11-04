@@ -1,8 +1,6 @@
 import RootStyleRegistry from './emotion';
-
-import Link from 'next/link'
-import FootNav from './components/foot-nav'
 import './globals.css'
+import MyAppShell from './components/app-shell';
 
 export const dynamic = 'force-dynamic'
 
@@ -24,18 +22,13 @@ export default function RootLayout({
         {/* <Header />
         {children}
         <FootNav /> */}
-        <RootStyleRegistry>{children}</RootStyleRegistry>
+        <RootStyleRegistry>
+          <MyAppShell >{children}</MyAppShell>
+        </RootStyleRegistry>
       </body>
     </html>
   )
 }
 
-function Header() {
-  return <div className='mb-24'>
-    <div className=' top-0 fixed z-10 bg-white w-full shadow-sm h-16 flex items-center px-5'>
-      <Link href={'/'} className='text-2xl font-bold' >Home</Link>
-    </div>
-  </div>
-}
 
 

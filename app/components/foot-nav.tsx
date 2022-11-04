@@ -6,9 +6,9 @@ import { usePathname } from 'next/navigation';
 export default function FootNav() {
   const pathname: string = usePathname()
 
-  if (pathname !== '/' && pathname !== '/me') {
-    return null
-  }
+  // if (pathname !== '/' && pathname !== '/me') {
+  //   return null
+  // }
 
 
   return <div className="h-20"><div className="btm-nav">

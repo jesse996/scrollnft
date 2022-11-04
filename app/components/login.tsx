@@ -47,6 +47,5 @@ export default function Login() {
             <Link href={'/register'}>注册</Link>
             <Link href={'/forget'}>忘记密码</Link>
         </div>
-        <Toast data={"test toast"} timeout={3000}></Toast>
     </div>
 }
