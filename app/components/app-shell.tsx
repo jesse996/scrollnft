@@ -43,11 +43,11 @@ export default function MyAppShell({
       //     </Aside>
       //   </MediaQuery>
       // }
-      footer={
-        <Footer height={60} p="md">
-          <FootNav></FootNav>
-        </Footer>
-      }
+      // footer={
+      //   <Footer height={60} p="md">
+      //     <FootNav></FootNav>
+      //   </Footer>
+      // }
       header={
         <Header height={70} p="md">
           <div style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
