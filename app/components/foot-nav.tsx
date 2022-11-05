@@ -4,7 +4,7 @@ import Link from "next/link"
 import { usePathname } from 'next/navigation';
 
 export default function FootNav() {
-  const pathname: string = usePathname()
+  const pathname = usePathname()
 
   // if (pathname !== '/' && pathname !== '/me') {
   //   return null
