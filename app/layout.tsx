@@ -1,5 +1,5 @@
-import RootStyleRegistry from './emotion';
 import './globals.css'
+import RootStyleRegistry from './emotion';
 import MyAppShell from './components/app-shell';
 
 // export const dynamic = 'force-dynamic'
