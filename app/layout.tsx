@@ -2,7 +2,8 @@ import RootStyleRegistry from './emotion';
 import './globals.css'
 import MyAppShell from './components/app-shell';
 
-export const dynamic = 'force-dynamic'
+// export const dynamic = 'force-dynamic'
+// export const runtime = 'experimental-edge'
 
 export default function RootLayout({
   children,
