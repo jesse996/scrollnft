@@ -3,7 +3,6 @@
 import { showNotification } from "@mantine/notifications"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
-import Toast from "./toast"
 
 export default function Login() {
     const router = useRouter()
