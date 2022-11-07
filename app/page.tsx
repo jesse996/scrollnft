@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div >
       <p className='tw-text-2xl tw-font-bold tw-mb-4'>发现数字藏品</p>
-      <div className='tw-grid tw-grid-cols-2 tw-md:grid-cols-3 tw-lg:grid-cols-4 tw-gap-5'>
+      <div className='tw-grid tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4 tw-gap-5'>
         <Item />
         <Item />
         <Item />
