@@ -1,7 +1,6 @@
 import './globals.css'
 import RootStyleRegistry from './emotion';
 import MyAppShell from './components/app-shell';
-import Chakra from './chakra';
 
 // export const dynamic = 'force-dynamic'
 // export const runtime = 'experimental-edge'
@@ -21,29 +20,13 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
-        {/* <Header />
-        {children}
-        <FootNav /> */}
         <RootStyleRegistry>
           <MyAppShell >{children}</MyAppShell>
         </RootStyleRegistry>
-
-        {/* <Chakra>
-          <MyLayout>{children}</MyLayout>
-        </Chakra> */}
       </body>
     </html>
   )
 }
 
-function MyLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <div>
-      <div>head</div>
-      {children}
-      <div>foot</div>
-    </div>
-  )
-}
 
 
