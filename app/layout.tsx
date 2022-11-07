@@ -24,13 +24,13 @@ export default function RootLayout({
         {/* <Header />
         {children}
         <FootNav /> */}
-        {/* <RootStyleRegistry>
+        <RootStyleRegistry>
           <MyAppShell >{children}</MyAppShell>
-        </RootStyleRegistry> */}
+        </RootStyleRegistry>
 
-        <Chakra>
+        {/* <Chakra>
           <MyLayout>{children}</MyLayout>
-        </Chakra>
+        </Chakra> */}
       </body>
     </html>
   )

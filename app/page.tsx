@@ -1,6 +1,6 @@
 'use client'
 
-import { Button, Stack } from '@chakra-ui/react'
+import { Button } from '@mantine/core'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -9,20 +9,8 @@ import React from 'react'
 export default function Home() {
   return (
     <div >
-      <Stack spacing={4} direction='row' align='center'>
-        <Button colorScheme='teal' size='xs'>
-          Button
-        </Button>
-        <Button colorScheme='teal' size='sm'>
-          Button
-        </Button>
-        <Button colorScheme='teal' size='md'>
-          Button
-        </Button>
-        <Button colorScheme='teal' size='lg'>
-          Button
-        </Button>
-      </Stack>
+
+      <Button>aa</Button>
 
       <p className='text-2xl font-bold mb-4'>发现数字藏品</p>
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>

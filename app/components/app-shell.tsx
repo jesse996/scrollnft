@@ -11,6 +11,7 @@ import {
   MediaQuery,
   Burger,
   useMantineTheme,
+  Button,
 } from '@mantine/core';
 import Link from 'next/link';
 import FootNav from './foot-nav';
@@ -60,9 +61,8 @@ export default function MyAppShell({
                 mr="xl"
               />
             </MediaQuery>
-            <Link href={'/'}>
-              <Text>数字藏品</Text>
-            </Link>
+            <Button component={Link} href='/' variant='subtle' size='lg' compact color={'dark'}>
+              数字藏品</Button>
           </div>
         </Header>
       }
