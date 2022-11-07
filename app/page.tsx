@@ -9,11 +9,6 @@ import React from 'react'
 export default function Home() {
   return (
     <div >
-      <h1>haha</h1>
-      <h2>haha</h2>
-
-      <Button>aa</Button>
-
       <p className='tw-text-2xl tw-font-bold tw-mb-4'>发现数字藏品</p>
       <div className='tw-grid tw-grid-cols-2 tw-md:grid-cols-3 tw-lg:grid-cols-4 tw-gap-5'>
         <Item />
