@@ -8,18 +8,18 @@ import Toast from "./toast"
 export default function Login() {
     const router = useRouter()
 
-    return <div className="w-96 h-96 absolute inset-0 m-auto shadow p-10 border">
+    return <div className="tw-w-96 tw-h-96 tw-absolute tw-inset-0 tw-m-auto tw-shadow tw-p-10 tw-border">
         {/* <div className="flex justify-center mb-5">
           <img src={'https://static.ibox.art/file/oss/test/image/nft-goods/b36619c8c9734ea9b56167e79850add5.jpg?style=st6'} alt='' className="w-20 h-20"></img>
         </div> */}
-        <div className="mb-5">
-            <input className="input" placeholder="请输入邮箱" />
+        <div className="tw-mb-5">
+            <input className="tw-input" placeholder="请输入邮箱" />
         </div>
-        <div className="mb-5">
-            <input className="input" placeholder="请输入密码" />
+        <div className="tw-mb-5">
+            <input className="tw-input" placeholder="请输入密码" />
         </div>
-        <div className="mb-5">
-            <button className="btn w-full" onClick={async () => {
+        <div className="tw-mb-5">
+            <button className="tw-btn tw-w-full" onClick={async () => {
                 // console.log('login')
                 let res = await fetch('/api/login', {
                     method: 'POST',
@@ -43,7 +43,7 @@ export default function Login() {
 
             }}>登录</button>
         </div>
-        <div className="flex justify-between">
+        <div className="tw-flex tw-justify-between">
             <Link href={'/register'}>注册</Link>
             <Link href={'/forget'}>忘记密码</Link>
         </div>

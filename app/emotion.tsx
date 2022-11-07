@@ -27,7 +27,7 @@ export default function RootStyleRegistry({ children }: { children: React.ReactN
   return (
     <CacheProvider value={cache}>
       <MantineProvider withGlobalStyles withNormalizeCSS
-        emotionCache={myCache}
+      // emotionCache={myCache}
       >
         <NotificationsProvider>
           {children}

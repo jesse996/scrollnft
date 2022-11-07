@@ -12,5 +12,5 @@ module.exports = {
   // corePlugins: {
   //   preflight: false,
   // },
-  // prefix: 'tw-',
+  prefix: 'tw-',
 }
