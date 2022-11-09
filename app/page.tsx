@@ -1,12 +1,9 @@
-'use client'
-
-import { Button } from '@mantine/core'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 
-export default function Home() {
+export default async function Home() {
   return (
     <div >
       <p className='tw-text-2xl tw-font-bold tw-mb-4'>发现数字藏品</p>

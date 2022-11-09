@@ -3,6 +3,14 @@
 import { showNotification } from "@mantine/notifications"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
+import request from "utils/request"
+
+async function loginApi(username: string, password: string) {
+    const res = await request('/api/SysUser/Login', { method: 'post', body: { username, password } })
+    console.log('login res', res)
+
+}
+
 
 export default function Login() {
     const router = useRouter()
@@ -19,25 +27,26 @@ export default function Login() {
         </div>
         <div className="tw-mb-5">
             <button className="tw-btn tw-w-full" onClick={async () => {
+                await loginApi('string', 'strin')
                 // console.log('login')
-                let res = await fetch('/api/login', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        username: 'admin',
-                        password: 'admin'
-                    })
-                })
-                res = await res.json()
-                console.log('res', res)
-                // 登录成功跳转
-                // router.replace('/me')
-                showNotification({
-                    title: 'Default notification',
-                    message: 'Hey there, your code is awesome! 🤥',
-                })
+                // let res = await fetch('/api/login', {
+                //     method: 'POST',
+                //     headers: {
+                //         'Content-Type': 'application/json'
+                //     },
+                //     body: JSON.stringify({
+                //         username: 'admin',
+                //         password: 'admin'
+                //     })
+                // })
+                // res = await res.json()
+                // console.log('res', res)
+                // // 登录成功跳转
+                // // router.replace('/me')
+                // showNotification({
+                //     title: 'Default notification',
+                //     message: 'Hey there, your code is awesome! 🤥',
+                // })
 
 
             }}>登录</button>

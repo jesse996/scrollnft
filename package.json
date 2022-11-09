@@ -17,11 +17,14 @@
     "@mantine/notifications": "^5.7.1",
     "daisyui": "^2.38.1",
     "next": "13.0.2",
+    "qs": "^6.11.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sharp": "^0.31.2"
   },
   "devDependencies": {
     "@types/node": "18.11.9",
+    "@types/qs": "^6.9.7",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.8",
     "autoprefixer": "^10.4.13",
