@@ -1,4 +1,5 @@
 import { showNotification } from '@mantine/notifications'
+import { IconX } from '@tabler/icons'
 import Qs from 'qs'
 
 //对Fetch的封装：让其支持params/请求主体的格式化/请求地址的公共前缀
@@ -105,13 +106,10 @@ const request = function request(url: string, config?: typeof inital) {
   if (/^(POST|PUT|PATCH)$/i.test(method)) config!.body = body
 
   return fetch(url, config as RequestInit)
-    .then((response) => {
-      console.log('response', response)
-
+    .then(async (response) => {
       // 走到这边不一定是成功的：
       // Fetch的特点的是，只要服务器有返回结果，不论状态码是多少，它都认为是成功
       let { status, statusText } = response
-      console.log('status', status)
 
       if (status >= 200 && status < 400) {
         // 真正成功获取数据
@@ -137,9 +135,12 @@ const request = function request(url: string, config?: typeof inital) {
         code: 'STATUS ERROR',
         status,
         statusText,
+        error: await response.json(),
       })
     })
     .catch((reason) => {
+      console.log('请求失败', reason)
+
       // @1:状态码失败
       if (reason && reason.code === 'STATUS ERROR') {
         switch (reason.status) {
@@ -163,7 +164,15 @@ const request = function request(url: string, config?: typeof inital) {
       // @3:处理返回数据格式失败
       // ...
 
-      // return Promise.reject(reason)
+      // showNotification({
+      //   title: '错误',
+      //   color: 'red',
+      //   message: reason?.error.error + ' 🤥',
+      //   icon: < IconX size={18} />,
+
+      // })
+
+      return Promise.reject(reason)
     })
 }
 export default request
