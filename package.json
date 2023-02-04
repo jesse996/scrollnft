@@ -11,30 +11,30 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/server": "^11.10.0",
-    "@mantine/core": "^5.8.2",
-    "@mantine/hooks": "^5.8.2",
-    "@mantine/next": "^5.8.2",
-    "@mantine/notifications": "^5.8.2",
-    "@tabler/icons": "^1.112.0",
-    "daisyui": "^2.41.0",
-    "next": "13.0.4",
+    "@mantine/core": "^5.10.3",
+    "@mantine/hooks": "^5.10.3",
+    "@mantine/next": "^5.10.3",
+    "@mantine/notifications": "^5.10.3",
+    "@tabler/icons-react": "^2.2.0",
+    "daisyui": "^2.50.0",
+    "next": "13.1.6",
     "qs": "^6.11.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sharp": "^0.31.2"
+    "sharp": "^0.31.3"
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^0.2.0",
-    "@types/node": "18.11.9",
+    "@types/node": "18.11.18",
     "@types/qs": "^6.9.7",
-    "@types/react": "18.0.25",
-    "@types/react-dom": "18.0.9",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
     "autoprefixer": "^10.4.13",
-    "eslint": "8.28.0",
-    "eslint-config-next": "13.0.4",
-    "postcss": "^8.4.19",
+    "eslint": "8.33.0",
+    "eslint-config-next": "13.1.6",
+    "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4",
-    "typescript": "4.9.3",
-    "vercel": "^28.5.5"
+    "typescript": "4.9.5",
+    "vercel": "^28.15.0"
   }
 }

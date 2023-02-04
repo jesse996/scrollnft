@@ -1,7 +1,7 @@
 'use client'
 
 import { showNotification } from "@mantine/notifications"
-import { IconCheck, IconX } from "@tabler/icons"
+import { IconCheck, IconX } from "@tabler/icons-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
