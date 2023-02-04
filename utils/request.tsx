@@ -1,5 +1,3 @@
-import { showNotification } from '@mantine/notifications'
-import { IconX } from '@tabler/icons'
 import Qs from 'qs'
 
 //对Fetch的封装：让其支持params/请求主体的格式化/请求地址的公共前缀
